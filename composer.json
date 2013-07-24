@@ -1,0 +1,22 @@
+{
+	"name": "madesst/doctrine-generation-bundle",
+	"description": "Add propel-like base classes when generating entites",
+	"keywords": ["madesst", "doctrine", "propel", "generation"],
+	"type": "symfony-bundle",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "madesst",
+			"homepage": "https://github.com/madesst"
+		}
+	],
+	"require": {
+		"symfony/symfony": "2.1.*",
+		"doctrine/doctrine-bundle": "1.0.*",
+		"sensio/generator-bundle": "2.1.*"
+	},
+	"autoload": {
+		"psr-0": { "Madesst\\DoctrineGenerationBundle": "" }
+	},
+	"target-dir": "Madesst/DoctrineGenerationBundle"
+}
