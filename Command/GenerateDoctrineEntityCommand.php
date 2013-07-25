@@ -24,8 +24,6 @@ use Doctrine\DBAL\Types\Type;
  */
 class GenerateDoctrineEntityCommand extends \Sensio\Bundle\GeneratorBundle\Command\GenerateDoctrineEntityCommand
 {
-    private $generator;
-
 	protected $input;
 
 	protected function configure()
@@ -49,13 +47,11 @@ class GenerateDoctrineEntityCommand extends \Sensio\Bundle\GeneratorBundle\Comma
 		parent::interact($input, $output);
 	}
 
-    public function getGenerator()
-    {
-        if (null === $this->generator) {
-            $this->generator = new DoctrineEntityGenerator($this->getContainer()->get('filesystem'), $this->getContainer()->get('doctrine'));
-	        $this->generator->setPropelStyle($this->input->getOption('propel-style'));
-        }
+	protected function createGenerator()
+	{
+		$generator = new DoctrineEntityGenerator($this->getContainer()->get('filesystem'), $this->getContainer()->get('doctrine'));
+		$generator->setPropelStyle($this->input->getOption('propel-style'));
 
-        return $this->generator;
-    }
+		return $generator;
+	}
 }

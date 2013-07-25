@@ -11,8 +11,8 @@
 		}
 	],
 	"require": {
-		"symfony/symfony": "2.1",
-		"sensio/generator-bundle": "2.1",
+		"symfony/symfony": ">=2.2,<3.0",
+		"sensio/generator-bundle": ">=2.2",
 		"doctrine/doctrine-bundle": ">=1.0"
 	},
 	"autoload": {
