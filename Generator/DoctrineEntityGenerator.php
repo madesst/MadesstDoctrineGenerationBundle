@@ -6,12 +6,12 @@
  * Time: 14:13
  */
 
-namespace Madesst\DoctrineGenerationBundle\Command;
+namespace Madesst\DoctrineGenerationBundle\Generator;
 
 use Doctrine\ORM\Tools\EntityGenerator;
 use Doctrine\ORM\Tools\Export\ClassMetadataExporter;
 use Sensio\Bundle\GeneratorBundle\Generator\DoctrineEntityGenerator as BaseDoctrineEntityGenerator;
-use Madesst\DoctrineGenerationBundle\Mapping\ClassMetadata;
+use Madesst\DoctrineGenerationBundle\ORM\Mapping\ClassMetadata;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Bridge\Doctrine\RegistryInterface;

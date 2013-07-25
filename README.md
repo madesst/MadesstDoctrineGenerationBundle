@@ -46,12 +46,22 @@ class User
 
 ## Установка
 
-Добавьте бандл в ваш `composer.json`:
+Добавьте бандл в ваш `composer.json` (для symfony >=2.2):
 
 ```json
 {
     "require": {
-        "madesst/doctrine-generation-bundle": "dev-master"
+        "madesst/doctrine-generation-bundle": "1.*"
+    }
+}
+```
+
+или (для symfony 2.1):
+
+```json
+{
+    "require": {
+        "madesst/doctrine-generation-bundle": "0.9"
     }
 }
 ```
@@ -74,7 +84,7 @@ class User
 который как раз и управляет способом генерации:
 
 ```bash
-$ app/console doctrine:generate:entities СompanySomeBundle --propel-style=true
+$ app/console doctrine:generate:entities СompanySomeBundle --propel-style
 Generating entities for bundle "СompanySomeBundle"
   > backing up User.php to User.php~
   > generating Сompany\SomeBundle\Entity\Base\User

@@ -6,10 +6,11 @@
  * Time: 19:20
  */
 
-namespace Madesst\DoctrineGenerationBundle\Mapping;
+namespace Madesst\DoctrineGenerationBundle\ORM\Tools;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory as BaseDisconnectedClassMetadataFactory;
+use Madesst\DoctrineGenerationBundle\ORM\Mapping\ClassMetadata;
 
 class DisconnectedClassMetadataFactory extends BaseDisconnectedClassMetadataFactory
 {

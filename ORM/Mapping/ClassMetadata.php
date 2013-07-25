@@ -6,7 +6,7 @@
  * Time: 19:12
  */
 
-namespace Madesst\DoctrineGenerationBundle\Mapping;
+namespace Madesst\DoctrineGenerationBundle\ORM\Mapping;
 
 use Doctrine\ORM\Mapping\ClassMetadata as BaseClassMetadata;
 

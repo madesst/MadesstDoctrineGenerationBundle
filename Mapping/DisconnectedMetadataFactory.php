@@ -15,7 +15,7 @@ class DisconnectedMetadataFactory extends BaseDisconnectedMetadataFactory
 {
 	protected function getClassMetadataFactoryClass()
 	{
-		return 'Madesst\\DoctrineGenerationBundle\\Mapping\\DisconnectedClassMetadataFactory';
+		return 'Madesst\\DoctrineGenerationBundle\\ORM\\Tools\\DisconnectedClassMetadataFactory';
 	}
 
 	/**

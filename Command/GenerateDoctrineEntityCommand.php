@@ -16,6 +16,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Doctrine\DBAL\Types\Type;
+use Madesst\DoctrineGenerationBundle\Generator\DoctrineEntityGenerator;
 
 /**
  * Initializes a Doctrine entity inside a bundle.
