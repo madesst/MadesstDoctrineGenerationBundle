@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: madesst
- * Date: 23.07.13
- * Time: 19:20
- */
 
 namespace Madesst\DoctrineGenerationBundle\ORM\Tools;
 
