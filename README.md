@@ -46,12 +46,21 @@ class User
 
 ## Установка
 
-Добавьте бандл в ваш `composer.json` (для symfony >=2.2):
+Добавьте бандл в ваш `composer.json` (для symfony >=2.3):
 
 ```json
 {
     "require": {
-        "madesst/doctrine-generation-bundle": "1.*"
+        "madesst/doctrine-generation-bundle": "1.1"
+    }
+}
+```
+или (для symfony 2.2):
+
+```json
+{
+    "require": {
+        "madesst/doctrine-generation-bundle": "1.0"
     }
 }
 ```
