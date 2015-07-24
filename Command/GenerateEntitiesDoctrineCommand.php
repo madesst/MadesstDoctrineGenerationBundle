@@ -99,8 +99,7 @@ class GenerateEntitiesDoctrineCommand extends BaseGenerateEntitiesDoctrineComman
 				$output->writeln(sprintf('  > generating <comment>%s</comment>', $user_m->name));
 				$generator->generate(array($user_m), $entityMetadata->getPath());
 				$generator->setClassToExtend('');
-			}
-			else
+			} else
 			{
 				$output->writeln(sprintf('  > generating <comment>%s</comment>', $m->name));
 				$generator->generate(array($m), $entityMetadata->getPath());
