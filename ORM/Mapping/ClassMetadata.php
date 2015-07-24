@@ -21,7 +21,7 @@ class ClassMetadata extends BaseClassMetadata
 	{
 		$basename = substr($this->getName(), strrpos($this->getName(), '\\') + 1);
 
-		if(!$this->namespace)
+		if (!$this->namespace)
 		{
 			$this->namespace = substr($this->getName(), 0, strrpos($this->getName(), '\\'));
 		}
