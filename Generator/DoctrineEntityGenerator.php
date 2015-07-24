@@ -1,10 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: madesst
- * Date: 24.07.13
- * Time: 14:13
- */
+	 * Created by PhpStorm.
+	 * User: madesst
+	 * Date: 24.07.13
+	 * Time: 14:13
+	 */
 
 namespace Madesst\DoctrineGenerationBundle\Generator;
 
@@ -95,7 +95,7 @@ class DoctrineEntityGenerator extends BaseDoctrineEntityGenerator
 		$bundle_namespace = str_replace('\\', DIRECTORY_SEPARATOR, $bundle->getNamespace());
 		$entityDir = str_replace(DIRECTORY_SEPARATOR.$bundle_namespace, '', $bundle->getPath());
 
-		if($this->propel_style)
+		if ($this->propel_style)
 		{
 			$user_m = $class->getUserClassMetadata();
 
@@ -110,8 +110,7 @@ class DoctrineEntityGenerator extends BaseDoctrineEntityGenerator
 
 			$entityGenerator->generate(array($user_m), $entityDir);
 			$entityGenerator->setClassToExtend('');
-		}
-		else
+		} else
 		{
 			$entityGenerator->generate(array($class), $entityDir);
 		}

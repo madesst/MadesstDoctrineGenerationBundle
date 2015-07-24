@@ -80,7 +80,7 @@ class GenerateEntitiesDoctrineCommand extends BaseGenerateEntitiesDoctrineComman
 				$entityMetadata = $metadata;
 			}
 
-			if($input->getOption('propel-style'))
+			if ($input->getOption('propel-style'))
 			{
 				$user_m = $m->getUserClassMetadata();
 

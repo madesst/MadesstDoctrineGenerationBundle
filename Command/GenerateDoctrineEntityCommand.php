@@ -33,14 +33,14 @@ class GenerateDoctrineEntityCommand extends \Sensio\Bundle\GeneratorBundle\Comma
 		$this->addOption('propel-style', null, InputOption::VALUE_NONE, '.');
 	}
 
-    /**
-     * @throws \InvalidArgumentException When the bundle doesn't end with Bundle (Example: "Bundle/MySampleBundle")
-     */
-    protected function execute(InputInterface $input, OutputInterface $output)
-    {
-	    $this->input = $input;
-	    parent::execute($input, $output);
-    }
+	/**
+	 * @throws \InvalidArgumentException When the bundle doesn't end with Bundle (Example: "Bundle/MySampleBundle")
+	 */
+	protected function execute(InputInterface $input, OutputInterface $output)
+	{
+		$this->input = $input;
+		parent::execute($input, $output);
+	}
 
 	protected function interact(InputInterface $input, OutputInterface $output)
 	{
