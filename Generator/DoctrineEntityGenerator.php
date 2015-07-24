@@ -1,10 +1,10 @@
 <?php
 /**
-	 * Created by PhpStorm.
-	 * User: madesst
-	 * Date: 24.07.13
-	 * Time: 14:13
-	 */
+ * Created by PhpStorm.
+ * User: madesst
+ * Date: 24.07.13
+ * Time: 14:13
+ */
 
 namespace Madesst\DoctrineGenerationBundle\Generator;
 
